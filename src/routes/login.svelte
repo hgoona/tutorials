@@ -6,8 +6,9 @@
 		const email = new FormData(currentTarget).get('email');
 
 		const redirectUrl = `${window.location.origin}/auth/confirm`;
-		sendMagicLink(email, redirectUrl);
+		sendMagicLink(email.toString(), redirectUrl);
 	};
+
 
 	// const formLogin = {
 	// 	email: ''
